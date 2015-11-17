@@ -1,7 +1,7 @@
 # Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexander Petrenko](https://htmlacademy.ru/profile/id118953).
-* Наставник: `Unknown`.
+* Наставник: `Евгений Болтян`.
 
 ### Немного о себе
 
