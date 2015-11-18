@@ -5,27 +5,27 @@
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body>
-		<header class="m-header">
-			<nav class="m-menu">
-				<a href="" class="m-link m-link_menu">информация</a>
-				<a href="" class="m-link m-link_menu m-link_menu_active">оставить отзыв</a>
-				<a href="" class="m-link m-link_menu">блог шерифа</a>
-				<a href="" class="m-link m-link_menu">гостиницы</a>
+		<header class="header">
+			<nav class="main-nav">
+				<a href="" class="main-nav__link main-nav__link--active">информация</a>
+				<a href="" class="main-nav__link">оставить отзыв</a>
+				<a href="" class="main-nav__link">блог шерифа</a>
+				<a href="" class="main-nav__link">гостиницы</a>
 			</nav>
-			<div class="m-top-menu">
-				<div class="m-top-menu__logo"><a href=""><img src="" alt=""></a></div>
-				<div class="m-top-menu__up-menu"><a href=""></a></div>
+			<div class="top-menu">
+				<div class="top-menu__logo"><a href=""><img src="" alt=""></a></div>
+				<div class="top-menu__toggle-menu"><a class="toggle-menu__link" href=""></a></div>
 			</div>
-			<div class="m-header__foto"></div>
+			<div class="main-foto"></div>
 		</header>
 		<main>
-			<div class="m-page-head">
-				<div class="m-page-head-title">Оставьте свой отзыв</div>
-				<div class="m-page-head-desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
+			<div class="page-head">
+				<div class="page-head__title">Оставьте свой отзыв</div>
+				<div class="page-head__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
 			</div>
-			<div class="m-form-field">
+			<div class="form-field">
 				<form action="">
-					<fieldset class="m-form-common">
+					<fieldset class="form-common">
 						<legend>Представьтесь, пожалуйста:</legend>
 						<label for="lastname">фамилия</label>
 						<input id="lastname" type="text" placeholder="Иванов" autofocus required>
@@ -34,40 +34,44 @@
 						<label for="middlename">отчество</label>
 						<input id="middlename" type="text" placeholder="Александрович">
 					</fieldset>
-					<fieldset class="m-form-impress">
+					<fieldset class="form-impress">
 						<legend>Ваще общее впечатление</legend>
 						<input id="plus-impress" type="radio" name="impress" checked>
 						<input id="minus-impress" type="radio" name="impress">
 						<label for="plus-impress">Скорее положительное</label>
 						<label for="minus-impress">Скорее отрицательное</label>
 					</fieldset>
-					<fieldset class="m-form-visitdate">
+					<fieldset class="form-visitdate">
 						<legend>Даты вашей поездки:</legend>
 						<label for="date-in"></label>
 						<input id="date-in" type="date">
-							<div class="staytime">
+							<div class="form-visitdate__staytime">
 								<label for="stay">длительность прибывания</label>
-								<a href="" class="count-down icon-minus"></a><input type="text" id="stay" min="1" max="999" value="14" pattern="[0-9]" required=""><a href="" class="icon-plus count-up"></a>
+								<a class="count-down icon-minus" href=""></a>
+								<input type="number" id="stay" min="1" max="999" value="14" required>
+								<a class="count-up icon-plus" href=""></a>
 							</div>
 						<label for="date-out"></label>
 						<input id="date-out" type="date">
 					</fieldset>
-					<fieldset class="m-form-guest-count">
+					<fieldset class="form-guest-count">
 						<legend>кол-во путешественников:</legend>
-						<label for="guest-count">количествово путешественников:</label>
-						<a href="" class="count-down icon-minus"></a><input type="text" id="guest-count" min="1" max="999" value="14" pattern="[0-9]" required=""><a href="" class="icon-plus count-up"></a>
-						<div class="guest">
+						<label for="guest-count">количество путешественников:</label>
+						<a  class="count-down icon-minus" href=""></a>
+						<input type="number" id="guest-count" min="1" max="999" value="2" required>
+						<a class="count-up icon-plus" href=""></a>
+						<div class="form-guest-count__guest-item">
 							<span>№</span>
-							<div class="guest-num">1</div>
-							<div class="guest-common"></div>
+							<div class="guest-item__num">1</div>
+							<div class="guest-item__common"></div>
 						</div>
-						<div class="guest">
+						<div class="form-guest-count__guest-item">
 							<span>№</span>
-							<div class="guest-num">2</div>
-							<div class="guest-common"></div>
+							<div class="guest-item__num">2</div>
+							<div class="guest-item__common"></div>
 						</div>
 					</fieldset>
-					<fieldset class="m-form-showplace">
+					<fieldset class="form-showplace">
 						<legend>посещенные достопримечательности:</legend>
 						<ul>
 							<li><input type="checkbox" name="show" checked><label for=""></label></li>
@@ -76,7 +80,7 @@
 							<li><input type="checkbox" name="show" checked><label for=""></label></li>
 						</ul>
 					</fieldset>
-					<fieldset class="m-form-fotos">
+					<fieldset class="form-fotos">
 						<legend>ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
 						<a href="#">выбрать фотографии</a>
 						<div class="foto"><img src="" alt=""></div>
@@ -90,19 +94,18 @@
 					<input class="btn" type="submit" value="отправить отзыв">
 				</form>
 			</div>
-			<footer class="m-footer">
-				<div class="m-footer__hteg"><a href="">#visitsedona</a></div>
-				<div class="m-footer__social-btns">
-					<a href=""><i class="icon-twitter"></i></a>
-					<a href=""><i class="icon-facebook"></i></a>
-					<a href=""><i class="icon-youtube"></i></a>
-				</div>
-				<div class="m-footer__copyright">
-					<div class="m-footer__copyright-by">website by</div>
-					<div class="a"><img src="img/copyright-logo.png" alt=""></div>
-				</div>
-			</footer>
 		</main>
-
+		<footer class="footer">
+			<div class="site__hteg"><a href="">#visitsedona</a></div>
+			<div class="social-links">
+				<a class="social-links__twitter" href=""><i class="icon-twitter"></i></a>
+				<a class="social-links__facebook" href=""><i class="icon-facebook"></i></a>
+				<a class="social-links__youtube" href=""><i class="icon-youtube"></i></a>
+			</div>
+			<div class="copyright-block">
+				<div class="copyright-block__copyright-by">website by</div>
+				<a class="copyright-block__copyright-logo" href="#" ><img src="img/copyright-logo.png" alt=""></a>
+			</div>
+		</footer>
 	</body>
 </html>
