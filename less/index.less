@@ -1,0 +1,106 @@
+.reason-row {
+	background-color: #eee;
+	min-width: 210px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	text-align: center;
+	justify-content: center;
+	
+}
+.reason-row--first {
+	padding-top: 60px;
+}
+.reason-row--blue {
+	color: @font-color;
+	background-color: #81b3d2;
+
+}
+.reason-row--gray {
+	color: @font-color--black;
+	&:not(:first-child):not(:last-child) {
+	border-top: 1px solid @gray-border;
+	border-bottom: 1px solid @gray-border;
+	}
+}
+.reason {
+	min-width: 210px;
+	padding: 40px;
+	&__desc,&__num,&__title {
+	margin-bottom: 15px;
+	}
+	&__title{
+	font-weight: @font-weight--bold;
+	}
+	&__desc,&__num {
+	font-size: @font-size--md;}
+}
+
+.reason-row__reason-foto--city {
+    min-height: 255px;
+    width: 100%;
+    background: url(../img/reason-1.jpg) no-repeat 0 0;
+    background-size: 100% 100%, cover;
+}
+.features-row {
+	color: @font-color--black;
+}
+.feature {
+	min-height: 155px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	&__title {
+		margin: 0 0 0 20%;
+		position: relative;
+		font-weight: @font-weight--bold;
+	}
+	&__logo:before {
+		content: "";
+		position: absolute;
+		top: -10px;
+		left: -45px;
+		width: 40px;
+		height: 40px;
+		background: url(../img/sprite.png) no-repeat;
+	}
+	&__logo--house:before {
+		background-position: -67px -10px;
+	}
+	&__logo--food:before {
+		background-position: -10px -10px;
+	}
+	&__logo--souv:before {
+		background-position: -124px -10px;
+	}
+	&__desc {
+		margin: 25px 0 0 20%;
+		font-size: @font-size--md;
+	}
+}
+.reason-row__reason-foto--bridge {
+    min-height: 255px;
+    width: 100%;
+    background: url(../img/reason-2.jpg) no-repeat 0 0;
+    background-size: 100% 100%, cover;
+}
+.search-hotel{
+	color: @font-color--black;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+		&__title {
+		font-size: @font-size--h3;
+		font-weight: @font-weight--bold;
+		margin: 40px 0 15px 0;
+		}
+		&__desc {
+		font-size: @font-size--md;
+		margin-bottom: 25px;
+		}
+		&__search {
+			margin-bottom: 50px;
+		}
+}
