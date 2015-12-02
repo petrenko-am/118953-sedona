@@ -7,92 +7,109 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<header class="header">
-			<nav class="main-nav">
-				<a href="index.html" class="main-nav__link">информация</a>
-				<a href="" class="main-nav__link  main-nav__link--active">оставить отзыв</a>
-				<a class="main-nav__logo" href="index.html"><img  class="top-logo" src="img/head-logo.png" alt=""></a>
-				<a href="" class="main-nav__link">блог шерифа</a>
-				<a href="" class="main-nav__link">гостиницы</a>
-			</nav>
-			<div class="top-menu">
-				<div class="top-menu__logo"></div>
-				<div class="top-menu__toggle-menu"><a class="toggle-menu__link" href=""></a></div>
-			</div>
-			<div class="main-foto"></div>
-		</header>
-		<main>
-			<div class="feedback-head">
-				<div class="feedback-head__title">Оставьте свой отзыв</div>
-				<div class="feedback-head__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
-			</div>
-			<div>
-				<form  class="form-field" action="">
-					<fieldset class="form-fieldset form-common">
-						<div class="form-fieldset__inner">					
-							<legend class="fieldset-title">Представьтесь, пожалуйста:</legend>
-							<div class="form-inner-wrapper">
-								<label class="form-common__label form-fieldset__required-label" for="lastname">фамилия</label>
-								<input class="form-fieldset__input form-common__input" id="lastname" type="text" placeholder="Иванов" autofocus required>
-							</div>
-							<div class="form-inner-wrapper">
-								<label class="form-common__label form-fieldset__required-label" for="firstname">имя</label>
-								<input class="form-fieldset__input form-common__input"  id="firstname" type="text" placeholder="Петр" required>
-							</div>
-							<div class="form-inner-wrapper">
-								<label class="form-common__label" for="middlename">отчество</label>
-								<input class="form-fieldset__input form-common__input"  id="middlename" type="text" placeholder="Александрович">
-							</div>
-						</div>
-					</fieldset>
-					<fieldset class="form-fieldset form-impress">
-						<div class="form-fieldset__inner">
-							<legend class="fieldset-title">Ваще общее впечатление</legend>
-							<input class="form-fieldset__input form-impress__input" id="plus-impress" type="radio" name="impress" checked>
-							<label class="form-impress__label" for="plus-impress">Скорее положительное</label>
-							<input class="form-fieldset__input form-impress__input" id="minus-impress" type="radio" name="impress">
-							<label class="form-impress__label" for="minus-impress">Скорее отрицательное</label>
-						</div>
-					</fieldset>
-					<fieldset class="form-fieldset form-visitdate">
-						<div class="form-fieldset__inner">
-							<legend class="fieldset-title">Даты вашей поездки:</legend>
-							<div class="form-inner-wrapper">
-								<label class="form-visitdate__label form-fieldset__required-label" for="date-in">дата приезда</label>
-								<input class="form-fieldset__input form-visitdate__input"  id="date-in" type="date" value="7523-11-27">
-							</div>
-							<div  class="form-inner-wrapper">
-								<label class="form-visitdate__label form-fieldset__required-label" for="stay">дней прибывания</label>
-								<div class="form-visitdate__staytime">
-									<a href="" class="staytime__count-down icon-minus"></a>
-									<input class="form-fieldset__input staytime__input" type="text" id="stay" min="1" max="999" value="14" pattern="[0-9]" maxlength="5" required>
-									<a href="" class="staytime__count-up icon-plus"></a>
+	<body class="form-page">
+		<div class="wrapper">
+			<header class="header">
+				<nav class="main-nav">
+					<a href="index.html" class="main-nav__link">информация</a>
+					<a href="" class="main-nav__link  main-nav__link--active">оставить отзыв</a>
+					<a class="main-nav__logo" href="index.html"><img  class="top-logo" src="img/head-logo.png" alt=""></a>
+					<a href="" class="main-nav__link">блог шерифа</a>
+					<a href="" class="main-nav__link">гостиницы</a>
+				</nav>
+				<div class="top-menu">
+					<div class="top-menu__logo"></div>
+					<div class="top-menu__toggle-menu"><a class="toggle-menu__link" href=""></a></div>
+				</div>
+				<div class="main-foto"></div>
+			</header>
+			<main>
+				<div class="feedback-head">
+					<div class="feedback-head__title">Оставьте свой отзыв</div>
+					<div class="feedback-head__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
+				</div>
+					<form  class="form-field" action="">
+						<fieldset class="form-fieldset form-common">
+							<div class="form-fieldset__inner">					
+								<legend class="fieldset-title">Представьтесь, пожалуйста:</legend>
+								<div class="form-inner-wrapper">
+									<label class="form-common__label form-fieldset__required-label" for="lastname">фамилия</label>
+									<input class="form-fieldset__input form-common__input" id="lastname" type="text" placeholder="Иванов" autofocus required>
+								</div>
+								<div class="form-inner-wrapper">
+									<label class="form-common__label form-fieldset__required-label" for="firstname">имя</label>
+									<input class="form-fieldset__input form-common__input"  id="firstname" type="text" placeholder="Петр" required>
+								</div>
+								<div class="form-inner-wrapper">
+									<label class="form-common__label" for="middlename">отчество</label>
+									<input class="form-fieldset__input form-common__input"  id="middlename" type="text" placeholder="Александрович">
 								</div>
 							</div>
-							<div  class="form-inner-wrapper">
-								<label class="form-visitdate__label form-fieldset__required-label" for="date-out">дата отьезда</label>
-								<input class="form-fieldset__input form-visitdate__input" id="date-out" type="date" value="7523-12-12">
+						</fieldset>
+						<fieldset class="form-fieldset form-impress">
+							<div class="form-fieldset__inner">
+								<legend class="fieldset-title">Ваще общее впечатление</legend>
+								<input class="form-fieldset__input form-impress__input" id="plus-impress" type="radio" name="impress" checked>
+								<label class="form-impress__label" for="plus-impress">Скорее положительное</label>
+								<input class="form-fieldset__input form-impress__input" id="minus-impress" type="radio" name="impress">
+								<label class="form-impress__label" for="minus-impress">Скорее отрицательное</label>
 							</div>
-						</div>
-					</fieldset>
-					<fieldset class="form-fieldset form-guest-amount">
-						<div class="form-fieldset__inner">
-							<legend class="fieldset-title">кол-во путешественников:</legend>
-							<div class="guest-amount-wrapper">
-								<label class="form-fieldset__required-label guest-item__label" for="guest-count">количество путешественников:</label>
-								<div class="form-guest-amount__guest-calc">
-									<a  class="guest-amount__count-down icon-minus" href=""></a>
-									<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" min="1" max="999" value="2" required>
-									<a class="guest-amount__count-up icon-plus" href=""></a>
+						</fieldset>
+						<fieldset class="form-fieldset form-visitdate">
+							<div class="form-fieldset__inner">
+								<legend class="fieldset-title">Даты вашей поездки:</legend>
+								<div class="form-inner-wrapper">
+									<label class="form-visitdate__label form-fieldset__required-label" for="date-in">дата приезда</label>
+									<input class="form-fieldset__input form-visitdate__input"  id="date-in" type="date" value="7523-11-27">
+								</div>
+								<div  class="form-inner-wrapper">
+									<label class="form-visitdate__label form-fieldset__required-label" for="stay">дней прибывания</label>
+									<div class="form-visitdate__staytime">
+										<a href="" class="staytime__count-down icon-minus"></a>
+										<input class="form-fieldset__input staytime__input" type="text" id="stay" min="1" max="999" value="14" pattern="[0-9]" maxlength="5" required>
+										<a href="" class="staytime__count-up icon-plus"></a>
+									</div>
+								</div>
+								<div  class="form-inner-wrapper">
+									<label class="form-visitdate__label form-fieldset__required-label" for="date-out">дата отьезда</label>
+									<input class="form-fieldset__input form-visitdate__input" id="date-out" type="date" value="7523-12-12">
 								</div>
 							</div>
-							<div class="form-guest-count">
-								<div class="form-guest-count__guest-item">
-
+						</fieldset>
+						<fieldset class="form-fieldset form-guest-amount">
+							<div class="form-fieldset__inner">
+								<legend class="fieldset-title">кол-во путешественников:</legend>
+								<div class="guest-amount-wrapper">
+									<label class="form-fieldset__required-label guest-item__label" for="guest-count">количество путешественников:</label>
+									<div class="form-guest-amount__guest-calc">
+										<a  class="guest-amount__count-down icon-minus" href=""></a>
+										<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" min="1" max="999" value="2" required>
+										<a class="guest-amount__count-up icon-plus" href=""></a>
+									</div>
+								</div>
+								<div class="form-guest-count">
+									<div class="form-guest-count__guest-item">
+											<div class="guest-item__num">
+												<div class="num__text">№</div>
+												<div class="num__count">1</div>
+											</div>
+											<div  class="form-inner-wrapper">
+												<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
+												<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" required>
+											</div>
+											<div  class="form-inner-wrapper">
+												<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
+												<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" required>
+											</div>
+											<div  class="form-inner-wrapper">
+												<label class="guest-item__label" for="middlename">отчество</label>
+												<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович">
+											</div>
+									</div>
+									<div class="form-guest-count__guest-item">
 										<div class="guest-item__num">
-											<div class="num__text">№</div>
-											<div class="num__count">1</div>
+												<div class="num__text">№</div>
+												<div class="num__count">2</div>
 										</div>
 										<div  class="form-inner-wrapper">
 											<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
@@ -106,112 +123,92 @@
 											<label class="guest-item__label" for="middlename">отчество</label>
 											<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович">
 										</div>
-
-								</div>
-								<div class="form-guest-count__guest-item">
-
-										<div class="guest-item__num">
-											<div class="num__text">№</div>
-											<div class="num__count">2</div>
-										</div>
-										<div  class="form-inner-wrapper">
-											<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
-											<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" required>
-										</div>
-										<div  class="form-inner-wrapper">
-											<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
-											<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" required>
-										</div>
-										<div  class="form-inner-wrapper">
-											<label class="guest-item__label" for="middlename">отчество</label>
-											<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович">
-										</div>
-
+									</div>
 								</div>
 							</div>
-						</div>
-					</fieldset>
-					<fieldset class="form-fieldset form-showplace">
-						<div class="form-fieldset__inner">
-							<legend class="fieldset-title">посещенные<br>достопримечательности:</legend>
-							<ul class="form-showplace__list">
-								<li>
-									<input class="form-fieldset__input form-showplace__input" id="devil-bridge" type="checkbox" name="show" checked>
-									<label class="form-showplace__label" for="devil-bridge">Мость Дьявола</label>
-								</li>
-								<li>
-									<input class="form-fieldset__input form-showplace__input" id="slide-park" type="checkbox" name="show">
-									<label class="form-showplace__label" for="slide-park">Слайд-парк</label>
-								</li>
-								<li>
-									<input class="form-fieldset__input form-showplace__input" id="hill-bell" type="checkbox" name="show" checked>
-									<label class="form-showplace__label" for="hill-bell">Гора-Колокол</label>
-								</li>
-								<li>
-									<input class="form-fieldset__input form-showplace__input" id="red-hill" type="checkbox" name="show" checked>
-									<label class="form-showplace__label" for="red-hill">Красные скалы</label>
-								</li>
-							</ul>
-						</div>
-					</fieldset>
-					<fieldset class="form-fieldset form-fotos">
-						<div class="form-fieldset__inner form-fotos__inner">
-							<legend class="fieldset-title">ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
-							<a class="select-foto" href="#">выбрать фотографии</a>
-							<div class="fotos-inner">
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-686.jpg" alt="">
-									<div class="foto-desc">img-686.jpg</div>
-								</div>
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-687.jpg" alt="">
-									<div class="foto-desc">img-687.jpg</div>
-								</div>
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-688.jpg" alt="">
-									<div class="foto-desc">img-688.jpg</div>
-								</div>
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-689.jpg" alt="">
-									<div class="foto-desc">img-689.jpg</div>
-								</div>
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-690.jpg" alt="">
-									<div class="foto-desc">img-690.jpg</div>
-								</div>
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-691.jpg" alt="">
-									<div class="foto-desc">img-691.jpg</div>
-								</div>
-								<div class="foto">
-									<i class="upload-foto-del icon-cancel-1"></i>
-									<img src="img/upload-foto/img-691.jpg" alt="">
-									<div class="foto-desc">img-691.jpg</div>
+						</fieldset>
+						<fieldset class="form-fieldset form-showplace">
+							<div class="form-fieldset__inner">
+								<legend class="fieldset-title">посещенные<br>достопримечательности:</legend>
+								<ul class="form-showplace__list">
+									<li>
+										<input class="form-fieldset__input form-showplace__input" id="devil-bridge" type="checkbox" name="show" checked>
+										<label class="form-showplace__label" for="devil-bridge">Мость Дьявола</label>
+									</li>
+									<li>
+										<input class="form-fieldset__input form-showplace__input" id="slide-park" type="checkbox" name="show">
+										<label class="form-showplace__label" for="slide-park">Слайд-парк</label>
+									</li>
+									<li>
+										<input class="form-fieldset__input form-showplace__input" id="hill-bell" type="checkbox" name="show" checked>
+										<label class="form-showplace__label" for="hill-bell">Гора-Колокол</label>
+									</li>
+									<li>
+										<input class="form-fieldset__input form-showplace__input" id="red-hill" type="checkbox" name="show" checked>
+										<label class="form-showplace__label" for="red-hill">Красные скалы</label>
+									</li>
+								</ul>
+							</div>
+						</fieldset>
+						<fieldset class="form-fieldset form-fotos">
+							<div class="form-fieldset__inner form-fotos__inner">
+								<legend class="fieldset-title">ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
+								<a class="select-foto" href="#">выбрать фотографии</a>
+								<a class="select-foto--1280 btn" href="#">Перетащите фотографии сюда</a>
+								<div class="fotos-inner">
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-686.jpg" alt="">
+										<div class="foto-desc">img-686.jpg</div>
+									</div>
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-687.jpg" alt="">
+										<div class="foto-desc">img-687.jpg</div>
+									</div>
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-688.jpg" alt="">
+										<div class="foto-desc">img-688.jpg</div>
+									</div>
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-689.jpg" alt="">
+										<div class="foto-desc">img-689.jpg</div>
+									</div>
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-690.jpg" alt="">
+										<div class="foto-desc">img-690.jpg</div>
+									</div>
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-691.jpg" alt="">
+										<div class="foto-desc">img-691.jpg</div>
+									</div>
+									<div class="foto">
+										<i class="upload-foto-del icon-cancel-1"></i>
+										<img src="img/upload-foto/img-691.jpg" alt="">
+										<div class="foto-desc">img-691.jpg</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</fieldset>
-					<input class="btn form-fotos__submit-btn" type="submit" value="отправить отзыв">
-				</form>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="site__hteg"><a href="">#visitsedona</a></div>
-			<div class="social-links">
-				<a class="social-link social-links__twitter" href=""></a>
-				<a class="social-link social-links__facebook" href=""></a>
-				<a class="social-link social-links__youtube" href=""></a>
-			</div>
-			<div class="copyright-block">
-				<div class="copyright-block__copyright-by">разработано</div>
-				<a class="copyright-block__copyright-logo" href="#"><img src="img/_ha-logo.png" alt=""></a>
-			</div>
-		</footer>
+						</fieldset>
+						<input class="btn form-fotos__submit-btn" type="submit" value="отправить отзыв">
+					</form>
+			</main>
+			<footer class="footer">
+				<div class="site__hteg"><a href="">#visitsedona</a></div>
+				<div class="social-links">
+					<a class="social-link social-links__twitter" href=""></a>
+					<a class="social-link social-links__facebook" href=""></a>
+					<a class="social-link social-links__youtube" href=""></a>
+				</div>
+				<div class="copyright-block">
+					<div class="copyright-block__copyright-by">разработано</div>
+					<a class="copyright-block__copyright-logo" href="#"><img src="img/_ha-logo.png" alt=""></a>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>

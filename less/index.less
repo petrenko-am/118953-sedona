@@ -1,3 +1,6 @@
+main {
+	background-color: #fff;
+}
 .page-head {
 	color: @font-color--black;
     min-height: 220px;
@@ -62,6 +65,7 @@
 }
 .features-row {
 	color: @font-color--black;
+	background-color: #fff;
 }
 .feature {
 	min-height: 155px;
@@ -120,6 +124,14 @@
 		}
 		&__btn {
 			margin-bottom: 50px;
+			font-weight: @font-weight--bold;
+			&:hover {
+			background-color: @blue-hover;
+			}
+			&:active {
+			background-color: @blue-down;
+			color: @font-color--blue-down;
+			}
 		}
 }
 
@@ -264,5 +276,19 @@
 	box-sizing: border-box;
 	margin-bottom: 60px;
 }
+
+}
+// Десктоп версия
+@media (min-width: @screen-lg) {
+body {
+	background-color: @gray-form;
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	box-shadow: 0 0 10px 1px rgba(0,0,0,.3);
+}
+
 
 }
