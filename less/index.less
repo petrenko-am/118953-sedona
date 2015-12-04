@@ -28,9 +28,9 @@ main {
 	box-sizing: border-box;
 	text-align: center;
 	justify-content: center;
-	&--first {
-		padding-top: 60px;
-	}
+		&--first {
+			padding-top: 60px;
+		}
 }
 .reason-row--blue {
 	color: @font-color;
@@ -40,28 +40,33 @@ main {
 .reason-row--gray {
 	color: @font-color--black;
 	.reason:not(:first-child):not(:last-child) {
-	border-top: 1px solid @gray-border;
-	border-bottom: 1px solid @gray-border;
+		border-top: 1px solid @gray-border;
+		border-bottom: 1px solid @gray-border;
 	}
 }
 .reason {
 	min-width: 210px;
 	padding: 40px;
-	&__desc,&__num,&__title {
-		margin-bottom: 15px;
-	}
-	&__title{
-		font-weight: @font-weight--bold;
-	}
-	&__desc,&__num {
-		font-size: @font-size--md;
-	}
+		&__desc,&__num,&__title {
+			margin-bottom: 15px;
+		}
+		&__title{
+			font-weight: @font-weight--bold;
+		}
+		&__desc,&__num {
+			font-size: @font-size--md;
+		}
 }
 .reason-row__reason-foto--city {
     min-height: 255px;
     width: 100%;
-    background: url(../img/reason-1.jpg) no-repeat 0 0;
+    background: url("../img/photo-city@1x.jpg") no-repeat 0 0;
     background-size: 100% 100%, cover;
+}
+@media (min-resolution: 1.5dppx) {
+.reason-row__reason-foto--city {
+	background-image: url("../img/photo-city@2x.jpg");
+}
 }
 .features-row {
 	color: @font-color--black;
@@ -73,39 +78,34 @@ main {
 	display: flex;
     flex-direction: column;
     justify-content: center;
-	&__title {
-		margin: 0 0 0 20%;
-		position: relative;
-		font-weight: @font-weight--bold;
-	}
-	&__logo:before {
-		content: "";
-		position: absolute;
-		top: -10px;
-		left: -45px;
-		width: 40px;
-		height: 40px;
-		background: url(../img/sprite.png) no-repeat;
-	}
-	&__logo--house:before {
-		background-position: -67px -10px;
-	}
-	&__logo--food:before {
-		background-position: -10px -10px;
-	}
-	&__logo--souv:before {
-		background-position: -124px -10px;
-	}
-	&__desc {
-		margin: 25px 0 0 20%;
-		font-size: @font-size--md;
-	}
+		&__title {
+			margin: 0 0 0 20%;
+			position: relative;
+			font-weight: @font-weight--bold;
+		}
+		&__logo {
+			position: absolute;
+			top: -10px;
+			left: -45px;
+			width: 40px;
+			height: 40px;
+			fill: @blue;
+		}
+		&__desc {
+			margin: 25px 0 0 20%;
+			font-size: @font-size--md;
+		}
 }
 .reason-row__reason-foto--bridge {
     min-height: 255px;
     width: 100%;
-    background: url(../img/reason-2.jpg) no-repeat 0 0;
+    background: url("../img/photo-bridge@1x.jpg") no-repeat 0 0;
     background-size: 100% 100%, cover;
+}
+@media (min-resolution: 1.5dppx) {
+.reason-row__reason-foto--bridge {
+	background-image: url("../img/photo-bridge@2x.jpg");
+}
 }
 .search-hotel{
 	color: @font-color--black;
@@ -151,8 +151,8 @@ main {
 	padding: 50px 10%;
 }
 .page-head__title{
-		padding: 40px 0;
-		font-weight: @font-weight--bold;
+	padding: 40px 0;
+	font-weight: @font-weight--bold;
 }
 .page-head__desc{
 	color: @font-color--gray;
@@ -206,35 +206,36 @@ main {
 	height: 256px;
 	padding: 0 50px;
 	box-sizing: border-box;
-	&__title {
-		margin: 0;
-		margin-bottom: 30px;
-		position: relative;
-		font-size: @font-size--title;
-		font-weight: @font-weight--bold;
-	}
-	&__logo:before {
-		content: "";
-		position: absolute;
-		top: -55px;
-		left: 43%;
-		width: 40px;
-		height: 40px;
-		background: url(../img/sprite.png) no-repeat;
-	}
-	&__logo--house:before {
-		background-position: -67px -10px;
-	}
-	&__logo--food:before {
-		background-position: -10px -10px;
-	}
-	&__logo--souv:before {
-		background-position: -124px -10px;
-	}
-	&__desc {
-		margin: 0;
-		font-size: @font-size--md;
-	}
+		&__title {
+			margin: 0;
+			margin-bottom: 30px;
+			position: relative;
+			font-size: @font-size--title;
+			font-weight: @font-weight--bold;
+		}
+		&__logo {
+			position: absolute;
+			top: -55px;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+		}
+		&__logo--house:before {
+			background-position: -67px -10px;
+		}
+		&__logo--food:before {
+			background-position: -10px -10px;
+		}
+		&__logo--souv:before {
+			background-position: -124px -10px;
+		}
+		&__desc {
+			margin: 0;
+			font-size: @font-size--md;
+		}
 }
 .reason-row__reason-foto--bridge {
     width: 66.666%;
@@ -249,8 +250,8 @@ main {
 	word-wrap: break-word;
 	color: @font-color--black;
 		.reason:not(:first-child):not(:last-child) {
-		border-top: 0;
-		border-bottom: 0;
+			border-top: 0;
+			border-bottom: 0;
 		}
 }
 .search-hotel{
@@ -279,16 +280,17 @@ main {
 
 }
 // Десктоп версия
+
 @media (min-width: @screen-lg) {
 body {
 	background-color: @gray-form;
 }
 .wrapper {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
-
 	box-shadow: 0 0 10px 1px rgba(0,0,0,.3);
 }
 
 
 }
+

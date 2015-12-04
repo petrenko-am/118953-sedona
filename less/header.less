@@ -5,8 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	
-			&:after {
+		&:after {
 			content: "×";
 			font-family: 'Verdana';
 			font-size: @font-size-ico--computed;
@@ -15,9 +14,9 @@
 			right: 5%;
 			line-height: 5px;
 			}
-			&__logo {
+		&__logo {
 			display: none;
-			}
+		}
 }
 .main-nav__link {
     display: flex;
@@ -53,13 +52,30 @@
 	position: relative;
 	align-items: center;
 }
-.top-menu__logo {
 
-	background: url(../img/head-logo.png) no-repeat 50% 0;
+.top-menu__logo {
 	width: 100%;
 	height: 70px;
 	margin-bottom: -14px;
 	z-index: 1;
+	position: relative;
+}
+.form-logo-triangle {
+	position: absolute;
+	fill: @blue;
+	margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	top: 0;
+}
+.logo-sedona--img {
+	position: absolute;
+	margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	top: 0;
 }
 .top-menu__toggle-menu {
 	width: 25px;
@@ -72,11 +88,48 @@
 .main-foto {
 	width: 100%;
 	height: 390px;
-	background: url(../img/white-mask.png) no-repeat left bottom,
-	url(../img/foto-title.png) no-repeat 50% 40px,
-	#dbe9f2 url(../img/bg.jpg) no-repeat 0 0;
-	background-size: 100%, 320px 320px, cover;
+	background: url("../img/photo-background@1x.jpg") no-repeat;
+	background-size: cover;
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	-webkit-clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+    clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+}
+@media (min-resolution: 1.5dppx) {
+.main-foto {
+	background-image: url("../img/photo-background@2x.jpg");
+}
+}
+
+.text-welcome {
+	margin-top: 45px;
+    margin-bottom: 8px;
+    fill: @blue;
+}
+.text-tothegorgeous {
+	fill: @brown;
+	margin-bottom: 30px;
+}
+.text-sedona{
+	fill: #fff;
+	width: 280px;
+	margin-bottom: 20px;
+}
+.text-becausecanyon{
+	fill: #fff;
+	width: 187px;
+}
+.form-page {
+	.text-welcome, .text-tothegorgeous, .text-becausecanyon {
+	display: none;
+	}
+	.text-sedona{
+		margin-bottom: 0;
+		margin-top: 50px;
+		width: 175px;
+	}
 }
 
 // Планшетная версия
@@ -93,12 +146,13 @@
 	min-height: 56px;
 	align-items: center;
 		&:after {
-		display: none;
+			display: none;
 		}
 		&__logo {
-		display: inline-block;
-		margin-bottom: -16px;
-		z-index: 1;
+			display: inline-block;
+			margin-bottom: -16px;
+			z-index: 1;
+			width: 20%;
 		}
 		&__link {
 			width: 20%;
@@ -131,15 +185,35 @@
 				}
 			}	
 		}
-		
 }
 .main-foto {
 	width: 100%;
 	height: 515px;
-	background: url(../img/foto-title.png) no-repeat 50% 40px,
-	#dbe9f2 url(../img/bg.jpg) no-repeat 0 0;
-	background-size: 320px 320px, cover;
+	background-image: url("../img/photo-background@2x.jpg");
+	background-size: 100% 100%, cover;
 	-webkit-clip-path: polygon(100% 0%, 100% 91%, 80% 95%, 80% 91%, 50% 100%, 20% 91%, 20% 95%, 0 91%, 0% 0%);
 	clip-path: polygon(100% 0%, 100% 91%, 80% 95%, 80% 91%, 50% 100%, 20% 91%, 20% 95%, 0 91%, 0% 0%);
+}
+.form-page {
+	.text-sedona{
+		margin-top: 100px;
+		width: 460px;
+	}
+}
+.text-welcome {
+	margin-top: 75px;
+    margin-bottom: 17px;
+	width: 256px;
+}
+.text-tothegorgeous {
+	width: 256px;
+	margin-bottom: 52px;
+}
+.text-sedona{
+	width: 460px;
+	margin-bottom: 55px;
+}
+.text-becausecanyon{
+	width: 300px;
 }
 }
