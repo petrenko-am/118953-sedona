@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HTML Academy: Седона</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
@@ -172,7 +173,8 @@
 		<div class="wrapper">
 						<header class="header">
 				<nav class="main-nav">
-					<a href="" class="main-nav__link main-nav__link--active">информация</a>
+					<a href="index.html" class="main-nav__link main-nav__link--active">информация</a>
+					<svg class="icon-cross close-menu" width="22.199px" height="22.199px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
 					<a href="form.html" class="main-nav__link">оставить отзыв</a>
 					<a class="main-nav__logo" href="index.html">
 						<svg class="form-logo-triangle" width="137px" height="70.778px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#form-logo-triangle"></use></svg>
@@ -202,7 +204,7 @@
 						<img class="logo-sedona--img" src="img/logo-sedona@1x.png" width="67px" height="56px">	
 					</picture>
 					</div>
-					<div class="top-menu__toggle-menu"><a class="toggle-menu__link" href=""></a></div>
+					<a href="" class="top-menu__toggle-menu"></a>
 				</div>
 				<div class="main-foto">
 					<svg class="text-welcome" width="187.663px" height="44.918px" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-welcome"></use></svg>
@@ -216,21 +218,21 @@
 					<div class="feedback-head__title">Оставьте свой отзыв</div>
 					<div class="feedback-head__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
 				</div>
-					<form  class="form-field" action="">
+					<form class="form-field" action="https://echo.htmlacademy.ru/adaptive?" method="post">
 						<fieldset class="form-fieldset form-common">
 							<div class="form-fieldset__inner">					
 								<legend class="fieldset-title">Представьтесь, пожалуйста:</legend>
 								<div class="form-inner-wrapper">
 									<label class="form-common__label form-fieldset__required-label" for="lastname">фамилия</label>
-									<input class="form-fieldset__input form-common__input" id="lastname" type="text" placeholder="Иванов" autofocus required>
+									<input class="form-fieldset__input form-common__input" id="lastname" type="text" placeholder="Иванов" name="feedback-writer__lastname" autofocus required>
 								</div>
 								<div class="form-inner-wrapper">
 									<label class="form-common__label form-fieldset__required-label" for="firstname">имя</label>
-									<input class="form-fieldset__input form-common__input"  id="firstname" type="text" placeholder="Петр" required>
+									<input class="form-fieldset__input form-common__input"  id="firstname" type="text" placeholder="Петр" name="feedback-writer__name" required>
 								</div>
 								<div class="form-inner-wrapper">
 									<label class="form-common__label" for="middlename">отчество</label>
-									<input class="form-fieldset__input form-common__input"  id="middlename" type="text" placeholder="Александрович">
+									<input class="form-fieldset__input form-common__input"  id="middlename" type="text" placeholder="Александрович" name="feedback-writer__middlename">
 								</div>
 							</div>
 						</fieldset>
@@ -248,19 +250,19 @@
 								<legend class="fieldset-title">Даты вашей поездки:</legend>
 								<div class="form-inner-wrapper">
 									<label class="form-visitdate__label form-fieldset__required-label" for="date-in">дата приезда</label>
-									<input class="form-fieldset__input form-visitdate__input"  id="date-in" type="date" value="7523-11-27">
+									<input class="form-fieldset__input form-visitdate__input"  id="date-in" type="date" value="7523-11-27" name="visitdate__in">
 								</div>
 								<div  class="form-inner-wrapper">
 									<label class="form-visitdate__label form-fieldset__required-label" for="stay">дней прибывания</label>
 									<div class="form-visitdate__staytime">
 										<a href="" class="staytime__count-down icon-minus"></a>
-										<input class="form-fieldset__input staytime__input" type="text" id="stay" min="1" max="999" value="14" pattern="[0-9]" maxlength="5" required>
+										<input class="form-fieldset__input staytime__input" type="number" id="stay" name="visitdate__days" min="1" max="99" value="14" pattern="[0-9]" maxlength="2" required>
 										<a href="" class="staytime__count-up icon-plus"></a>
 									</div>
 								</div>
 								<div  class="form-inner-wrapper">
 									<label class="form-visitdate__label form-fieldset__required-label" for="date-out">дата отьезда</label>
-									<input class="form-fieldset__input form-visitdate__input" id="date-out" type="date" value="7523-12-12">
+									<input class="form-fieldset__input form-visitdate__input" id="date-out" type="date" value="7523-12-12" name="visitdate__out">
 								</div>
 							</div>
 						</fieldset>
@@ -271,7 +273,7 @@
 									<label class="form-fieldset__required-label guest-item__label" for="guest-count">количество путешественников:</label>
 									<div class="form-guest-amount__guest-calc">
 										<a  class="guest-amount__count-down icon-minus" href=""></a>
-										<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" min="1" max="999" value="2" required>
+										<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" name="guest-count" min="1" max="25" value="2" required>
 										<a class="guest-amount__count-up icon-plus" href=""></a>
 									</div>
 								</div>
@@ -283,15 +285,15 @@
 											</div>
 											<div  class="form-inner-wrapper">
 												<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
-												<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" required>
+												<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" name="guest-1__lastname" required>
 											</div>
 											<div  class="form-inner-wrapper">
 												<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
-												<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" required>
+												<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" name="guest-1__name" required>
 											</div>
 											<div  class="form-inner-wrapper">
 												<label class="guest-item__label" for="middlename">отчество</label>
-												<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович">
+												<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович" name="guest-1__middlename">
 											</div>
 									</div>
 									<div class="form-guest-count__guest-item">
@@ -301,15 +303,15 @@
 										</div>
 										<div  class="form-inner-wrapper">
 											<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
-											<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" required>
+											<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" name="guest-2__lastname" required>
 										</div>
 										<div  class="form-inner-wrapper">
 											<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
-											<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" required>
+											<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" name="guest-2__name" required>
 										</div>
 										<div  class="form-inner-wrapper">
 											<label class="guest-item__label" for="middlename">отчество</label>
-											<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович">
+											<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович" name="guest-2__middlename">
 										</div>
 									</div>
 								</div>
@@ -320,19 +322,19 @@
 								<legend class="fieldset-title">посещенные<br>достопримечательности:</legend>
 								<ul class="form-showplace__list">
 									<li>
-										<input class="form-fieldset__input form-showplace__input" id="devil-bridge" type="checkbox" name="show" checked>
+										<input class="form-fieldset__input form-showplace__input" id="devil-bridge" type="checkbox" name="sp__devil-bridge" checked>
 										<label class="form-showplace__label" for="devil-bridge">Мость Дьявола</label>
 									</li>
 									<li>
-										<input class="form-fieldset__input form-showplace__input" id="slide-park" type="checkbox" name="show">
+										<input class="form-fieldset__input form-showplace__input" id="slide-park" type="checkbox" name="sp__park">
 										<label class="form-showplace__label" for="slide-park">Слайд-парк</label>
 									</li>
 									<li>
-										<input class="form-fieldset__input form-showplace__input" id="hill-bell" type="checkbox" name="show" checked>
+										<input class="form-fieldset__input form-showplace__input" id="hill-bell" type="checkbox" name="sp__hill-bell" checked>
 										<label class="form-showplace__label" for="hill-bell">Гора-Колокол</label>
 									</li>
 									<li>
-										<input class="form-fieldset__input form-showplace__input" id="red-hill" type="checkbox" name="show" checked>
+										<input class="form-fieldset__input form-showplace__input" id="red-hill" type="checkbox" name="sp__red-hill" checked>
 										<label class="form-showplace__label" for="red-hill">Красные скалы</label>
 									</li>
 								</ul>
@@ -382,9 +384,25 @@
 								</div>
 							</div>
 						</fieldset>
-						<input class="btn form-fotos__submit-btn" type="submit" value="отправить отзыв">
+						<input class="btn form-field__submit-btn" type="submit" value="отправить отзыв">
 					</form>
 			</main>
+			<section class="modal-content">
+				<div class="popup fail-popup">
+					<div class="fail-popup__title">ЧТО-ТО ПОШЛО НЕ ТАК!</div>
+					<div class="fail-popup__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+					<a href="" class="btn fail-popup__close-btn">OK</a>
+				</div>
+				<div class="popup success-popup">
+					<div class="success-popup__wrapper">
+						<div class="success-popup__title">Ваш отзыв отправлен!</div>
+						<div class="success-popup__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</div>
+					</div>
+					<div class="success-popup__btn-field">
+						<a href="" class="btn success-popup__close-btn">ЗАКРЫТЬ ОКНО</a>
+					</div>
+				</div>
+			</section>	
 			<footer class="footer">
 				<div class="site__hteg"><a href="">#visitsedona</a></div>
 				<div class="social-links">
@@ -406,5 +424,6 @@
 				</div>
 			</footer>
 		</div>
+	<script src="js/script.js"></script>	
 	</body>
 </html>

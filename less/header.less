@@ -2,18 +2,9 @@
 	background-color: #fff;
 }
 .main-nav {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	position: relative;
-		&:after {
-			content: "×";
-			font-family: 'Verdana';
-			font-size: @font-size-ico--computed;
-			position: absolute;
-			top: 10%;
-			right: 5%;
-			line-height: 5px;
-			}
 		&__logo {
 			display: none;
 		}
@@ -45,6 +36,13 @@
 		color: @font-color--blue-down;
 	}
 }
+.close-menu {
+	position: absolute;
+    right: 20px;
+	top: 16px;
+    fill: #fff;
+	cursor: pointer;
+}
 .top-menu {
 	display: flex;
 	justify-content: center;
@@ -54,11 +52,13 @@
 }
 
 .top-menu__logo {
-	width: 100%;
+	width: 137px;
 	height: 70px;
 	margin-bottom: -14px;
 	z-index: 1;
 	position: relative;
+	margin-left: -68.5px;
+    left: 50%;
 }
 .form-logo-triangle {
 	position: absolute;
@@ -80,10 +80,11 @@
 .top-menu__toggle-menu {
 	width: 25px;
 	height: 25px;
-	position: absolute;
     top: 30%;
     right: 0.5em;
 	background: linear-gradient(@blue 20%, transparent 20%, transparent 40%, @blue 40%, @blue 60%, transparent 60%, transparent 80%, @blue 80%);
+	margin-left: auto;
+    margin-right: 20px;
 }
 .main-foto {
 	width: 100%;
