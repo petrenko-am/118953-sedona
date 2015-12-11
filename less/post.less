@@ -17,12 +17,17 @@
 .post-head__desc{
 	margin-bottom: 30px;
 	.page-head__desc();
+	line-height: @line-height--desc;
 }
 .post-head__tegs {
 	font-size: 1.4rem;
     color: @gray-dark;
     display: flex;
     justify-content: space-between;
+}
+.teg-logo {
+	margin-right: 10px;
+	fill: @blue;
 }
 .post-attention {
 	text-align: center;
@@ -84,6 +89,16 @@
 			text-align: center;
 			padding: 18px;
 			font-weight: @font-weight--bold;
+			transition: all 0.3s;
+				&:hover {
+					background-color: @blue;
+					color: #fff;
+				}
+				&:active {
+					background-color: @blue-down;
+					border-color: @blue-down;
+					color: @blue-lightborder;
+				}
 		}
 		&__btn:nth-child(3) {
 			width: 280px;
@@ -136,6 +151,9 @@
 // Десктоп версия
 
 @media (min-width: @screen-lg) {
+	.post-page .main-foto {
+		height: 300px;
+	}
 	.post-inner {
 		padding: 0 17%;
 	}

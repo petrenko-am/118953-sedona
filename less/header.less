@@ -50,7 +50,6 @@
 	position: relative;
 	align-items: center;
 }
-
 .top-menu__logo {
 	width: 137px;
 	height: 70px;
@@ -103,7 +102,18 @@
 	background-image: url("../img/photo-background@2x.jpg");
 }
 }
-
+.form-page, .blog-page, .post-page {
+	.text-welcome, .text-tothegorgeous, .text-becausecanyon {
+		display: none;
+	}
+	.main-foto {
+		justify-content: center;
+		height: 160px;
+	}
+	.text-sedona{
+		width: 180px;
+	}
+}
 .text-welcome {
 	margin-top: 45px;
     margin-bottom: 8px;
@@ -121,16 +131,6 @@
 .text-becausecanyon{
 	fill: #fff;
 	width: 187px;
-}
-.form-page {
-	.text-welcome, .text-tothegorgeous, .text-becausecanyon {
-	display: none;
-	}
-	.text-sedona{
-		margin-bottom: 0;
-		margin-top: 50px;
-		width: 175px;
-	}
 }
 
 // Планшетная версия
@@ -195,12 +195,6 @@
 	-webkit-clip-path: polygon(100% 0%, 100% 91%, 80% 95%, 80% 91%, 50% 100%, 20% 91%, 20% 95%, 0 91%, 0% 0%);
 	clip-path: polygon(100% 0%, 100% 91%, 80% 95%, 80% 91%, 50% 100%, 20% 91%, 20% 95%, 0 91%, 0% 0%);
 }
-.form-page {
-	.text-sedona{
-		margin-top: 100px;
-		width: 460px;
-	}
-}
 .text-welcome {
 	margin-top: 75px;
     margin-bottom: 17px;
@@ -217,4 +211,23 @@
 .text-becausecanyon{
 	width: 300px;
 }
+
+.form-page, .blog-page, .post-page {
+	.text-sedona{
+		width: 460px;
+	}
+	.main-foto {
+		height: 290px;
+	}
+}
+
+}
+// Десктоп версия
+@media (min-width: @screen-lg) {
+	.form-page, .blog-page, .post-page {
+		.main-foto 	{
+			height: 300px;
+		}
+	}
+	
 }

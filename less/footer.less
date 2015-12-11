@@ -6,13 +6,13 @@
 	background-color: #fff;
 }
 .site__hteg {
-	font-size: @font-size--md;
-	font-weight: @font-weight--bold;
 	margin-bottom: 40px;
-	& a{
-	text-decoration: none;
-	color: @font-color--black;
-	font-size: @font-size--bg;}
+		& a {
+			text-decoration: none;
+			font-weight: @font-weight--bold;
+			color: @font-color--black;
+			font-size: @font-size--title;
+		}
 }
 .social-links{ 
 	display: flex;
@@ -39,6 +39,7 @@
     width: 46px;
     height: 48px;
     background-color: @blue;
+	transition: all 0.3s;
 	/*&:hover {
 	transition: all 1s;
     transform: rotateY(360deg);
@@ -82,8 +83,8 @@
 	.footer {
 
 		flex-direction: row;
-		justify-content: space-around;
-		padding: 40px 0;
+		justify-content: space-between;
+		padding: 40px 6%;
 }
 	.copyright-block {
 		margin-bottom: 40px;

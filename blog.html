@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body class="post-page">
+	<body class="blog-page">
 		<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<symbol id="blog-calendar" viewBox="0 0 956 1024">
@@ -170,7 +170,7 @@
 				</symbol>
 			</defs>
 		</svg>
-		<div class="wrapper">		
+		<div class="wrapper">
 			<header class="header">
 				<nav class="main-nav">
 					<a href="" class="main-nav__link">информация</a>
@@ -207,60 +207,76 @@
 					<a href="" class="top-menu__toggle-menu"></a>
 				</div>
 				<div class="main-foto">
-					<svg class="text-welcome" width="187.663px" height="44.918px" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-welcome"></use></svg>
-					<svg class="text-tothegorgeous" width="255.917px" height="28.91px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-tothegorgeous"></use></svg>
 					<svg class="text-sedona" width="459.755px" height="79.804px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use></svg>
-					<svg class="text-becausecanyon" width="293.826px" height="79.393px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-becausecanyon"></use></svg>
 				</div>
 			</header>
-		<main class="post-inner">
-			<div class="post-head container">
-				<div class="post-head__title">БЛОГ Шерифа </div>
-				<div class="post-head__desc">Седона удивительный город! Горы здесь красного цвета. А местный шериф ведет блог и общается на форумах</div>
-				<div class="post-head__tegs">
-					<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>позавчера</span>
-					<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>происшествия</span>
+			<main class="blog-inner">
+				<div class="blog-head">
+					<div class="blog-head__title">БЛОГ Шерифа </div>
+					<div class="blog-head__desc">Седона удивительный город! Горы здесь красного цвета. А местный шериф ведет блог и общается на форумах</div>
 				</div>
-			</div>
-			<article class="post-article post-attention container">
-				<h3>Внимание! сбежала моя домашняя анаконда</h3>
-				<p class="post-attention__text">Жители Седоны и гости города, будьте бдительны — Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</p>
-			</article>
-			<article class="post-article post-history container">
-				<h3>Предыстория</h3>
-				<p class="post-article__text">В далеком 85-ом я подобрал эту змею на трассе. Ее переехал грузовик и она валялась на обочине. 
-				Мне стало жаль ее и я решил взять ее с собой. Кинул в багажник пикапа и подумал  тогда: «Если доедет до Седоны живой, так и быть, оставлю ее себе»</p>
-			</article>
-			<article class="post-article post-lost container">
-				<h3>Пропажа</h3>
-				<p class="post-article__text">Неделю назад я вернулся из канзаса и не нашел Анаконду дома. Обошел все 200 гектаров своего участка, но ее нигде нет. 
-				Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. особые приметы змеи:
-				</p>
-				<ul class="post-lost__list">
-					<li>Длина: 5 метров</li>
-					<li>Масса: 85 кг</li>
-					<li>Окраска: серовато-зелёная</li>
-				</ul>
-				<p class="post-article__text">Если вы увидите эту змею, сразу звоните 911 и бегите со всех ног от нее!</p>
-			</article>
-			<article class="post-article post-warn container">
-				<h3>Предостережение</h3>
-				<p class="post-article__text">не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:</p>
-				<blockquote class="post-warn__quote">Самый свирепый из зверей — 
-							теперь мы знаем — это человек, 
-							он убивает даже если не голоден.<br>
-							<cite>Адриано Челентано</cite>
-				</blockquote>
-			</article>
-			<div class="post-paginator">
-				<div class="post-paginator-inner">
-					<a href="" class="btn post-paginator__btn">пред.</a>
-					<a href="" class="btn post-paginator__btn">след.</a>
-					<a href="" class="btn post-paginator__btn">назад к списку</a>
+				<section class="blog-content">
+					<article class="blog-content__blog-item">
+						<h3>Внимание! сбежала моя домашняя анаконда</h3>
+						<p class="blog-item__text">Жители Седоны и гости города, будьте бдительны — Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>позавчера</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>происшествия</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>принят антитабачный закон штата</h3>
+						<p class="blog-item__text">Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города Седона категорически запрещено.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>2 дня назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>законы</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Маньяк задержан, дает показания</h3>
+						<p class="blog-item__text">Жители седоны могут спать спокойно. Задержан маньяк-эксгибиционист, державший в страхе весь город. Пострадавшим обращаться в 911.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>3 дня назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>происшествия</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Водопад закрыт на реконструкцию</h3>
+						<p class="blog-item__text">Всем, кто планировал посещать водопад на этих выходных придется изменить планы, на нем ведутся ремонтные работы по улучшению подачи воды.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>неделю назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>интересное</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Отрылся новый стейкхаус «горный бык»</h3>
+						<p class="blog-item__text">Лучшие стейки в Аризоне! Приемлемые цены и только самые лучшие продукты. Заходите попробовать! Действует акция: съешь два и получи третий!</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>месяц назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>еда</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Прогноз погоды на ближайшие выходные</h3>
+						<p class="blog-item__text">Синоптики обещают, что будет ясно, безветрено и около 90 по фаренгейту. Как в пустыне! Проверим их слова уже через пару дней.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>год назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>погода</span>
+						</div>
+					</article>
+				</section>
+				<div class="blog-paginator">
+				<div class="blog-paginator__text">страница:</div>
+					<div class="blog-paginator-inner">
+						<a href="" class="btn blog-paginator__btn blog-paginator__btn--active">1</a>
+						<a href="" class="btn blog-paginator__btn">2</a>
+						<a href="" class="btn blog-paginator__btn">3</a>
+						<a href="" class="btn blog-paginator__btn">4</a>
+						<a href="" class="btn blog-paginator__btn">5</a>
+					</div>
 				</div>
-			</div>
-		</main>
-		<footer class="footer">
+			</main>
+			<footer class="footer">
 				<div class="site__hteg"><a href="">#visitsedona</a></div>
 				<div class="social-links">
 					<a class="social-link" href="">

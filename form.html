@@ -173,9 +173,9 @@
 		<div class="wrapper">
 						<header class="header">
 				<nav class="main-nav">
-					<a href="index.html" class="main-nav__link main-nav__link--active">информация</a>
+					<a href="index.html" class="main-nav__link">информация</a>
 					<svg class="icon-cross close-menu" width="22.199px" height="22.199px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
-					<a href="form.html" class="main-nav__link">оставить отзыв</a>
+					<a href="form.html" class="main-nav__link main-nav__link--active">оставить отзыв</a>
 					<a class="main-nav__logo" href="index.html">
 						<svg class="form-logo-triangle" width="137px" height="70.778px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#form-logo-triangle"></use></svg>
 						<picture>
@@ -187,23 +187,23 @@
 							media="(min-width: 768px)"
 							srcset="img/logo-sedona@2x.png 2x,
 									img/logo-sedona@1x.png 1x">
-							<img class="logo-sedona--img" src="img/logo-sedona@2x.png" width="67px" height="56px">	
+							<img class="logo-sedona--img" src="img/logo-sedona@2x.png" width="67" height="56" alt="Sedona">	
 						</picture>
 					</a>
 					<a href="" class="main-nav__link">блог шерифа</a>
 					<a href="" class="main-nav__link">гостиницы</a>
 				</nav>
 				<div class="top-menu">
-					<div class="top-menu__logo">
+					<a class="top-menu__logo" href="index.html">
 					<svg class="form-logo-triangle" width="137px" height="70.778px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#form-logo-triangle"></use></svg>
 					<picture>
 						<source
 						media="(min-width: 320px)"
 						srcset="img/logo-sedona@2x.png 2x,
 								img/logo-sedona@1x.png 1x">
-						<img class="logo-sedona--img" src="img/logo-sedona@1x.png" width="67px" height="56px">	
+						<img class="logo-sedona--img" src="img/logo-sedona@1x.png" width="67" height="56" alt="Sedona">	
 					</picture>
-					</div>
+					</a>
 					<a href="" class="top-menu__toggle-menu"></a>
 				</div>
 				<div class="main-foto">
@@ -221,7 +221,7 @@
 					<form class="form-field" action="https://echo.htmlacademy.ru/adaptive?" method="post">
 						<fieldset class="form-fieldset form-common">
 							<div class="form-fieldset__inner">					
-								<legend class="fieldset-title">Представьтесь, пожалуйста:</legend>
+								<div class="fieldset-title">Представьтесь, пожалуйста:</div>
 								<div class="form-inner-wrapper">
 									<label class="form-common__label form-fieldset__required-label" for="lastname">фамилия</label>
 									<input class="form-fieldset__input form-common__input" id="lastname" type="text" placeholder="Иванов" name="feedback-writer__lastname" autofocus required>
@@ -238,7 +238,7 @@
 						</fieldset>
 						<fieldset class="form-fieldset form-impress">
 							<div class="form-fieldset__inner">
-								<legend class="fieldset-title">Ваще общее впечатление</legend>
+								<div class="fieldset-title">Ваще общее впечатление</div>
 								<input class="form-fieldset__input form-impress__input" id="plus-impress" type="radio" name="impress" checked>
 								<label class="form-impress__label" for="plus-impress">Скорее положительное</label>
 								<input class="form-fieldset__input form-impress__input" id="minus-impress" type="radio" name="impress">
@@ -247,17 +247,17 @@
 						</fieldset>
 						<fieldset class="form-fieldset form-visitdate">
 							<div class="form-fieldset__inner">
-								<legend class="fieldset-title">Даты вашей поездки:</legend>
+								<div class="fieldset-title">Даты вашей поездки:</div>
 								<div class="form-inner-wrapper">
 									<label class="form-visitdate__label form-fieldset__required-label" for="date-in">дата приезда</label>
 									<input class="form-fieldset__input form-visitdate__input"  id="date-in" type="date" value="7523-11-27" name="visitdate__in">
 								</div>
 								<div  class="form-inner-wrapper">
 									<label class="form-visitdate__label form-fieldset__required-label" for="stay">дней прибывания</label>
-									<div class="form-visitdate__staytime">
-										<a href="" class="staytime__count-down icon-minus"></a>
-										<input class="form-fieldset__input staytime__input" type="number" id="stay" name="visitdate__days" min="1" max="99" value="14" pattern="[0-9]" maxlength="2" required>
-										<a href="" class="staytime__count-up icon-plus"></a>
+									<div class="form-visitdate__staytime input-numeric">
+										<button class="staytime__count-down input-numeric__minus"><svg class="icon-minus" width="15px" height="15px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-minus"></use></svg></button>
+										<input class="form-fieldset__input staytime__input" type="number" id="stay" name="visitdate__days" min="1" max="99" value="14" required>
+										<button class="staytime__count-up input-numeric__plus"><svg class="icon-plus" width="15px" height="15px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg></button>
 									</div>
 								</div>
 								<div  class="form-inner-wrapper">
@@ -268,13 +268,13 @@
 						</fieldset>
 						<fieldset class="form-fieldset form-guest-amount">
 							<div class="form-fieldset__inner">
-								<legend class="fieldset-title">кол-во путешественников:</legend>
+								<div class="fieldset-title">кол-во путешественников:</div>
 								<div class="guest-amount-wrapper">
-									<label class="form-fieldset__required-label guest-item__label" for="guest-count">количество путешественников:</label>
-									<div class="form-guest-amount__guest-calc">
-										<a  class="guest-amount__count-down icon-minus" href=""></a>
+									<label class="form-fieldset__required-label guest-item__label form-guest-amount__label" for="guest-count">количество путешественников:</label>
+									<div class="form-guest-amount__guest-calc input-numeric">
+										<button  class="guest-amount__count-down input-numeric__minus"><svg class="icon-minus" width="15px" height="15px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-minus"></use></svg></button>
 										<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" name="guest-count" min="1" max="25" value="2" required>
-										<a class="guest-amount__count-up icon-plus" href=""></a>
+										<button class="guest-amount__count-up input-numeric__plus"><svg class="icon-plus" width="15px" height="15px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg></button>
 									</div>
 								</div>
 								<div class="form-guest-count">
@@ -284,16 +284,16 @@
 												<div class="num__count">1</div>
 											</div>
 											<div  class="form-inner-wrapper">
-												<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
-												<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" name="guest-1__lastname" required>
+												<label class="guest-item__label form-fieldset__required-label" for="lastname1">фамилия</label>
+												<input class="form-fieldset__input guest-item__input" id="lastname1" type="text" placeholder="Иванов" name="guest-1__lastname" required>
 											</div>
 											<div  class="form-inner-wrapper">
-												<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
-												<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" name="guest-1__name" required>
+												<label class="guest-item__label form-fieldset__required-label" for="firstname1">имя</label>
+												<input class="form-fieldset__input guest-item__input"  id="firstname1" type="text" placeholder="Петр" name="guest-1__name" required>
 											</div>
 											<div  class="form-inner-wrapper">
-												<label class="guest-item__label" for="middlename">отчество</label>
-												<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович" name="guest-1__middlename">
+												<label class="guest-item__label" for="middlename1">отчество</label>
+												<input class="form-fieldset__input guest-item__input"  id="middlename1" type="text" placeholder="Александрович" name="guest-1__middlename">
 											</div>
 									</div>
 									<div class="form-guest-count__guest-item">
@@ -302,16 +302,16 @@
 												<div class="num__count">2</div>
 										</div>
 										<div  class="form-inner-wrapper">
-											<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
-											<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" name="guest-2__lastname" required>
+											<label class="guest-item__label form-fieldset__required-label" for="lastname2">фамилия</label>
+											<input class="form-fieldset__input guest-item__input" id="lastname2" type="text" placeholder="Иванов" name="guest-2__lastname" required>
 										</div>
 										<div  class="form-inner-wrapper">
-											<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
-											<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" name="guest-2__name" required>
+											<label class="guest-item__label form-fieldset__required-label" for="firstname2">имя</label>
+											<input class="form-fieldset__input guest-item__input"  id="firstname2" type="text" placeholder="Петр" name="guest-2__name" required>
 										</div>
 										<div  class="form-inner-wrapper">
-											<label class="guest-item__label" for="middlename">отчество</label>
-											<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович" name="guest-2__middlename">
+											<label class="guest-item__label" for="middlename2">отчество</label>
+											<input class="form-fieldset__input guest-item__input"  id="middlename2" type="text" placeholder="Александрович" name="guest-2__middlename">
 										</div>
 									</div>
 								</div>
@@ -319,7 +319,7 @@
 						</fieldset>
 						<fieldset class="form-fieldset form-showplace">
 							<div class="form-fieldset__inner">
-								<legend class="fieldset-title">посещенные<br>достопримечательности:</legend>
+								<div class="fieldset-title">посещенные<br>достопримечательности:</div>
 								<ul class="form-showplace__list">
 									<li>
 										<input class="form-fieldset__input form-showplace__input" id="devil-bridge" type="checkbox" name="sp__devil-bridge" checked>
@@ -342,43 +342,43 @@
 						</fieldset>
 						<fieldset class="form-fieldset form-fotos">
 							<div class="form-fieldset__inner form-fotos__inner">
-								<legend class="fieldset-title">ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
+								<div class="fieldset-title">ЗАГРУЗИТЕ ФОТОГРАФИИ:</div>
 								<a class="select-foto" href="#">выбрать фотографии</a>
 								<a class="select-foto--1280 btn" href="#">Перетащите фотографии сюда</a>
 								<div class="fotos-inner">
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-686.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-686.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-686.jpg</div>
 									</div>
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-687.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-687.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-687.jpg</div>
 									</div>
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-688.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-688.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-688.jpg</div>
 									</div>
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-689.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-689.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-689.jpg</div>
 									</div>
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-690.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-690.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-690.jpg</div>
 									</div>
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-691.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-691.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-691.jpg</div>
 									</div>
 									<div class="foto">
-										<i class="upload-foto-del icon-cancel-1"></i>
-										<img src="img/upload-foto/img-691.jpg" width="140px" height="140px" alt="">
+										<i class="upload-foto-del"><svg class="icon-cross img-unselect" width="10px" height="10px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg></i>
+										<img src="img/upload-foto/img-691.jpg" width="140" height="140" alt="">
 										<div class="foto-desc">img-691.jpg</div>
 									</div>
 								</div>
@@ -424,6 +424,20 @@
 				</div>
 			</footer>
 		</div>
-	<script src="js/script.js"></script>	
+	<script src="js/script.js"></script>
+	<script id="guest-q-template" type="text/html">
+		<div class="form-inner-wrapper">
+			<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
+			<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" name="guest-{{guest-nam}}__lastname" required>
+		</div>
+		<div  class="form-inner-wrapper">
+			<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
+			<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" name="guest-{{guest-nam}}__name" required>
+		</div>
+		<div  class="form-inner-wrapper">
+			<label class="guest-item__label" for="middlename">отчество</label>
+			<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович" name="guest-{{guest-nam}}__middlename">
+		</div>
+	</script>
 	</body>
 </html>

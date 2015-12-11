@@ -1,0 +1,38 @@
+(function() {
+			var mobile-menu = document.querySelector(".main-nav");
+			var toggle = document.querySelector(".top-menu__toggle-menu");
+			
+			var close = document.querySelector(".modal_content_close");
+			
+			toggle.addEventListener("click", function(event) {
+			event.preventDefault();
+			mobile-menu.classList.add("modal-content-show");
+			});
+
+			toggle.addEventListener("click", function(event) {
+			event.preventDefault();
+			mobile-menu.classList.remove("modal-content-show");
+			
+			});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	var staytime = document.querySelector(".staytime__input");
+	var staytime-m = document.querySelector(".staytime__count-down");
+	var staytime-p = document.querySelector(".staytime__count-up");
+	var guest = document.querySelector(".guest-calc__input");
+	var guest-m = document.querySelector(".guest-amount__count-down");
+	var guest-p = document.querySelector(".guest-amount__count-up");
+
+	staytime-m.addEventListener("click", function(event) {
+			event.preventDefault();
+			staytime.classList.add("modal_content_show");
+			});
+
+})();

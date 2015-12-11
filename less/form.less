@@ -1,7 +1,7 @@
 .form-page .main-foto{
-	height: 290px;
+	height: 160px;
+	justify-content: center;
 }
-
 .feedback-head {
 	color: @font-color--black;
     min-height: 220px;
@@ -27,7 +27,7 @@
 		&__inner {
 		border-top: 1px solid @gray-form-border;
 		padding-top: 20px;
-		padding: 20px 8%;
+		padding: 20px 6%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -144,24 +144,26 @@
 	width: 115px;
 	
 }
+.input-numeric__minus, .input-numeric__plus {
+	border: 0;
+}
 .staytime__count-down, .staytime__count-up {
 	background-color: @gray-form;
 	text-decoration: none;
 	font-size: @font-size--bg;
+    width: 58px;
+    height: 58px;
+	text-align: center;
 }
 .icon-minus {
-    width: 58px;
+    width: 15px;
     height: 58px;
-    line-height: 60px;
-    text-align: center;
-    color: @gray-border;
+    fill: @gray-border;
 }
 .icon-plus {
-    width: 58px;
+    width: 15px;
     height: 58px;
-    line-height: 60px;
-    text-align: center;
-    color: @gray-border;
+	fill: @gray-border;
 }
 .guest-item__input {
 	width: 180px;
@@ -196,8 +198,10 @@
 	background-color: @gray-form;
 	text-decoration: none;
 	font-size: @font-size--bg;
+	width: 58px;
+    height: 58px;
+	text-align: center;
 }
-
 .form-guest-count__guest-item {
 	display: flex;
     flex-direction: row;
@@ -279,7 +283,9 @@
 		
 }
 .form-showplace__list input:checked + .form-showplace__label::before {
-	content: "\e80b";
+	background-image: url(../img/svg/checkmark.svg) ;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 .fotos-inner {
     display: flex;
@@ -321,9 +327,13 @@
     left: 20px;
     cursor: pointer;
     text-align: center;
-    line-height: 30px;
+    line-height: 32px;
 }
-
+.img-unselect{
+	fill: @gray-border;
+    width: 13px;
+    height: 13px;
+}
 .form-field__submit-btn {
 	outline: 0;
 	border: 0;
@@ -339,12 +349,13 @@
 .select-foto--1280 {
 	display: none;
 }
-/*Modal-content*/
 
 // Планшетная версия
 
 @media (min-width: @screen-md) {
-
+.form-page .main-foto {
+	height: 290px;
+}
 .feedback-head {
 	padding: 0px 20%;
 }
@@ -409,6 +420,9 @@
 .guest-item__label {
 	width: 160px;
 	align-self: center;
+}
+.form-guest-amount__label {
+	width: 245px;
 }
 .form-guest-amount__guest-calc {
 	align-self: center;
@@ -479,13 +493,19 @@
 	left: 110px;
 	line-height: 60px;
 }
-
+.img-unselect {
+    width: 22px;
+    height: 22px;
+}
 }
 // Десктоп версия
 
 @media (min-width: @screen-lg) {
 body {
 	background-color: @gray-form;
+}
+.form-page .main-foto {
+	height: 300px;
 }
 .fieldset-title {
 	&:before {
@@ -506,6 +526,9 @@ body {
 }
 .guest-amount-wrapper {
     margin: 0;
+}
+.guest-item__label {
+	width: 250px;
 }
 .form-showplace__list {
 	align-items: center;
