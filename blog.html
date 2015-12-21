@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="blog-page">
 		<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<symbol id="blog-calendar" viewBox="0 0 956 1024">
@@ -173,7 +173,7 @@
 		<div class="wrapper">
 			<header class="header">
 				<nav class="main-nav">
-					<a href="" class="main-nav__link main-nav__link--active">информация</a>
+					<a href="" class="main-nav__link">информация</a>
 					<svg class="icon-cross close-menu" width="22.199px" height="22.199px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
 					<a href="form.html" class="main-nav__link">оставить отзыв</a>
 					<a class="main-nav__logo" href="index.html">
@@ -187,10 +187,10 @@
 							media="(min-width: 768px)"
 							srcset="img/logo-sedona@2x.png 2x,
 									img/logo-sedona@1x.png 1x">
-							<img class="logo-sedona--img" src="img/logo-sedona@2x.png" width="67" height="56" alt="Sedona">	
+							<img class="logo-sedona--img" src="img/logo-sedona@2x.png" width="67px" height="56px">	
 						</picture>
 					</a>
-					<a href="blog.html" class="main-nav__link">блог шерифа</a>
+					<a href="blog.html" class="main-nav__link main-nav__link--active">блог шерифа</a>
 					<a href="" class="main-nav__link">гостиницы</a>
 				</nav>
 				<div class="top-menu">
@@ -201,86 +201,80 @@
 						media="(min-width: 320px)"
 						srcset="img/logo-sedona@2x.png 2x,
 								img/logo-sedona@1x.png 1x">
-						<img class="logo-sedona--img" src="img/logo-sedona@1x.png" width="67" height="56" alt="Sedona">	
+						<img class="logo-sedona--img" src="img/logo-sedona@1x.png" width="67px" height="56px">	
 					</picture>
 					</a>
-					<a href="" class="top-menu__toggle-menu"></a>
+					<a href="index.html" class="top-menu__toggle-menu"></a>
 				</div>
 				<div class="main-foto">
-					<svg class="text-welcome" width="187.663px" height="44.918px" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-welcome"></use></svg>
-					<svg class="text-tothegorgeous" width="255.917px" height="28.91px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-tothegorgeous"></use></svg>
 					<svg class="text-sedona" width="459.755px" height="79.804px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use></svg>
-					<svg class="text-becausecanyon" width="293.826px" height="79.393px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-becausecanyon"></use></svg>
 				</div>
 			</header>
-			<main>
-				<div class="page-head">
-					<div class="page-head__title">седона – небольшой городок в аризоне, заслуживающий большего!</div>
-					<div class="page-head__desc">рассмотрим 5 причин, по которым седона круче чем гранд каньен!</div>
+			<main class="blog-inner">
+				<div class="blog-head">
+					<div class="blog-head__title">БЛОГ Шерифа </div>
+					<div class="blog-head__desc">Седона удивительный город! Горы здесь красного цвета. А местный шериф ведет блог и общается на форумах</div>
 				</div>
-				<div class="reason-row reason-row--blue reason-row--first">
-					<div class="reason">
-						<div class="reason__title">настоящий городок</div>
-						<div class="reason__num"><span>– №1 –</span></div>
-						<div class="reason__desc">седона не атракцион для туристов, там течет своя жизнь</div>
-					</div>
-					<div class="reason-row__reason-foto--city"></div>
-				</div>
-				<div class="features-row">
-					<div class="feature">
-						<div class="feature__title feature__logo--house">
-						<svg class="feature__logo icon-house"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house"></use></svg>
-						жилье</div>
-						<div class="feature__desc">рекомендуем пожить в настоящем отеле, все как в кино</div>
-					</div>
-					<div class="feature">
-						<div class="feature__title feature__logo--food">
-						<svg class="feature__logo icon-burger"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use></svg>
-						еда</div>
-						<div class="feature__desc">всегда заказывай фирменный бургер, вы не разочаруетесь!</div>
-					</div>
-					<div class="feature">
-						<div class="feature__title feature__logo--souv">
-						<svg class="feature__logo icon-gift"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gift"></use></svg>
-						сувениры</div>
-						<div class="feature__desc">не только китайского, но и местного производства!</div>
-					</div>
-				</div>
-				<div class="reason-row reason-row--blue reason-row--second">
-					<div class="reason">
-						<div class="reason__title">там есть<br> мост дьявола</div>
-						<div class="reason__num"><span>– №2 –</span></div>
-						<div class="reason__desc">да, по нему можно пройти! если конечно вы осмелитесь</div>
-					</div>
-					<div class="reason-row__reason-foto--bridge"></div>
-				</div>
-				<div class="reasons">
-					<div class="reason-row reason-row--gray">
-						<div class="reason">
-							<div class="reason__title">небольшая<br> площадь</div>
-							<div class="reason__num"><span>– №3 –</span></div>
-							<div class="reason__desc">все достопримечательности находяться очень близко</div>
+				<section class="blog-content">
+					<article class="blog-content__blog-item">
+						<a class="blog-item__title-link" href="post.html"><h3>Внимание! сбежала моя домашняя анаконда</h3></a>
+						<p class="blog-item__text">Жители Седоны и гости города, будьте бдительны — Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>позавчера</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>происшествия</span>
 						</div>
-						<div class="reason">
-							<div class="reason__title">красивая<br> дорога</div>
-							<div class="reason__num"><span>– №4 –</span></div>
-							<div class="reason__desc">ехать в седону из лас-вегаса совсем не скучно!</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>принят антитабачный закон штата</h3>
+						<p class="blog-item__text">Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города Седона категорически запрещено.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>2 дня назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>законы</span>
 						</div>
-						<div class="reason">
-							<div class="reason__title">мало<br> туристов</div>
-							<div class="reason__num"><span>– №5 –</span></div>
-							<div class="reason__desc">большинство едет в гранд каньен и толпится там</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Маньяк задержан, дает показания</h3>
+						<p class="blog-item__text">Жители седоны могут спать спокойно. Задержан маньяк-эксгибиционист, державший в страхе весь город. Пострадавшим обращаться в 911.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>3 дня назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>происшествия</span>
 						</div>
-					</div>
-				</div>
-				<div class="search-hotel">
-					<div class="search-hotel__title">заинтерисовались?</div>
-					<div class="search-hotel__desc">укажите препочитаемы даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</div>
-					<a href="#" class="btn search-hotel__btn">найти гостиницу</a>
-				</div>
-				<section class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418800.0999680716!2d-111.63039681415398!3d34.909566703774395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1443607836263" style="width:100%; height:350px; border:0;" allowfullscreen=""></iframe>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Водопад закрыт на реконструкцию</h3>
+						<p class="blog-item__text">Всем, кто планировал посещать водопад на этих выходных придется изменить планы, на нем ведутся ремонтные работы по улучшению подачи воды.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>неделю назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>интересное</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Отрылся новый стейкхаус «горный бык»</h3>
+						<p class="blog-item__text">Лучшие стейки в Аризоне! Приемлемые цены и только самые лучшие продукты. Заходите попробовать! Действует акция: съешь два и получи третий!</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>месяц назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>еда</span>
+						</div>
+					</article>
+					<article class="blog-content__blog-item">
+						<h3>Прогноз погоды на ближайшие выходные</h3>
+						<p class="blog-item__text">Синоптики обещают, что будет ясно, безветрено и около 90 по фаренгейту. Как в пустыне! Проверим их слова уже через пару дней.</p>
+						<div class="blog-item__tegs">
+							<span class="tegs-item"><svg class="blog-calendar teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-calendar"></use></svg>год назад</span>
+							<span class="tegs-item"><svg class="blog-flag teg-logo" width="11px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#blog-flag"></use></svg>погода</span>
+						</div>
+					</article>
 				</section>
+				<div class="blog-paginator">
+				<div class="blog-paginator__text">страница:</div>
+					<div class="blog-paginator-inner">
+						<a href="" class="btn blog-paginator__btn blog-paginator__btn--active">1</a>
+						<a href="" class="btn blog-paginator__btn">2</a>
+						<a href="" class="btn blog-paginator__btn">3</a>
+						<a href="" class="btn blog-paginator__btn">4</a>
+						<a href="" class="btn blog-paginator__btn">5</a>
+					</div>
+				</div>
 			</main>
 			<footer class="footer">
 				<div class="site__hteg"><a href="">#visitsedona</a></div>
