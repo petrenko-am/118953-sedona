@@ -190,7 +190,7 @@
 							<img class="logo-sedona--img" src="img/logo-sedona@2x.png" width="67" height="56" alt="Sedona">	
 						</picture>
 					</a>
-					<a href="" class="main-nav__link">блог шерифа</a>
+					<a href="blog.html" class="main-nav__link">блог шерифа</a>
 					<a href="" class="main-nav__link">гостиницы</a>
 				</nav>
 				<div class="top-menu">
@@ -273,7 +273,7 @@
 									<label class="form-fieldset__required-label guest-item__label form-guest-amount__label" for="guest-count">количество путешественников:</label>
 									<div class="form-guest-amount__guest-calc input-numeric">
 										<button  class="guest-amount__count-down input-numeric__minus"><svg class="icon-minus" width="15px" height="15px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-minus"></use></svg></button>
-										<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" name="guest-count" min="1" max="25" value="2" required>
+										<input class="form-fieldset__input guest-calc__input" type="number" id="guest-count" name="guest-count" min="1" max="25" step="1" value="2" required>
 										<button class="guest-amount__count-up input-numeric__plus"><svg class="icon-plus" width="15px" height="15px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg></button>
 									</div>
 								</div>
@@ -425,18 +425,23 @@
 			</footer>
 		</div>
 	<script src="js/script.js"></script>
-	<script id="guest-q-template" type="text/html">
-		<div class="form-inner-wrapper">
-			<label class="guest-item__label form-fieldset__required-label" for="lastname">фамилия</label>
-			<input class="form-fieldset__input guest-item__input" id="lastname" type="text" placeholder="Иванов" name="guest-{{guest-nam}}__lastname" required>
+	<script src="js/vendors/mustache-2.2.0.min.js"></script>
+	<script id="guest-template" type="text/html">
+		<div class="guest-item__num">
+				<div class="num__text">№</div>
+				<div class="num__count">{{number}}</div>
 		</div>
 		<div  class="form-inner-wrapper">
-			<label class="guest-item__label form-fieldset__required-label" for="firstname">имя</label>
-			<input class="form-fieldset__input guest-item__input"  id="firstname" type="text" placeholder="Петр" name="guest-{{guest-nam}}__name" required>
+			<label class="guest-item__label form-fieldset__required-label" for="lastname{{number}}">фамилия</label>
+			<input class="form-fieldset__input guest-item__input" id="lastname{{number}}" type="text" placeholder="Иванов" name="guest-{{number}}__lastname" required>
 		</div>
 		<div  class="form-inner-wrapper">
-			<label class="guest-item__label" for="middlename">отчество</label>
-			<input class="form-fieldset__input guest-item__input"  id="middlename" type="text" placeholder="Александрович" name="guest-{{guest-nam}}__middlename">
+			<label class="guest-item__label form-fieldset__required-label" for="firstname{{number}}">имя</label>
+			<input class="form-fieldset__input guest-item__input"  id="firstname{{number}}" type="text" placeholder="Петр" name="guest-{{number}}__name" required>
+		</div>
+		<div  class="form-inner-wrapper">
+			<label class="guest-item__label" for="middlename{{number}}">отчество</label>
+			<input class="form-fieldset__input guest-item__input"  id="middlename{{number}}" type="text" placeholder="Александрович" name="guest-{{number}}__middlename">
 		</div>
 	</script>
 	</body>
