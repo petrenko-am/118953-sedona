@@ -103,10 +103,11 @@
 
 @media (min-width: @screen-md) {
 .blog-content {
-	flex-direction: row;
+	/*flex-direction: row;
 	flex-wrap: wrap;
 	align-items: baseline;
-	justify-content: space-between;
+	justify-content: space-between;*/
+	display: block;
     width: 685px;
 	position: relative;
 		&:after {
@@ -120,6 +121,12 @@
 			}
 		&__blog-item {
 			width: 305px;
+			display: inline-block;
+			float: left;
+			margin-right: 75px;
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
 			&:nth-last-child(-n+2) {
 				border-bottom: 2px solid @gray-border;
 			}
@@ -156,8 +163,15 @@
 			left: 820px;
 		}
 		&__blog-item {
+			margin-right: 90px;
 			&:nth-last-child(-n+3) {
 				border-bottom: 2px solid @gray-border;
+			}
+			&:nth-child(2n) {
+				margin-right: 90px;
+			}
+			&:nth-child(3n) {
+				margin-right: 0;
 			}
 		}
 }

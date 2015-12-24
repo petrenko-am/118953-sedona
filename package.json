@@ -22,6 +22,7 @@
     "grunt-contrib-less": "1.1.x",
     "grunt-contrib-uglify": "^0.11.0",
     "grunt-contrib-watch": "0.6.x",
+    "grunt-csscomb": "^3.1.0",
     "grunt-postcss": "0.7.x",
     "load-grunt-tasks": "3.3.x"
   },
