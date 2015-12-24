@@ -44,6 +44,7 @@ body {
   background-color: #81b3d2;
   color: #fff;
   font-weight: 700;
+  line-height: 5.4rem;
   text-decoration: none;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
@@ -291,7 +292,7 @@ main {
 }
 .page-head {
   color: #000;
-  min-height: 220px;
+  min-height: 240px;
   text-align: center;
   -webkit-clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
   clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
@@ -303,10 +304,12 @@ main {
 .page-head__title {
   padding: 40px 0;
   font-weight: 700;
+  line-height: 2.4rem;
 }
 .page-head__desc {
   color: #333;
   font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 .reason-row {
   background-color: #eee;
@@ -324,7 +327,7 @@ main {
           justify-content: center;
 }
 .reason-row--first {
-  padding-top: 60px;
+  padding-top: 25px;
 }
 .reason-row--blue {
   color: #fff;
@@ -353,6 +356,11 @@ main {
 .reason__num {
   font-size: 1.4rem;
 }
+.reason--gray {
+  min-height: 168px;
+  padding: 26px;
+  box-sizing: border-box;
+}
 .reason-row__reason-foto--city {
   min-height: 255px;
   width: 100%;
@@ -367,9 +375,10 @@ main {
 .features-row {
   color: #000;
   background-color: #fff;
+  padding: 10px 0;
 }
 .feature {
-  min-height: 155px;
+  min-height: 132px;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -421,18 +430,21 @@ main {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 50px;
 }
 .search-hotel__title {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  margin: 40px 0 15px 0;
+  margin: 25px 0;
 }
 .search-hotel__desc {
   font-size: 1.4rem;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
+  line-height: 2.1rem;
+  padding: 0 6%;
 }
 .search-hotel__btn {
-  margin-bottom: 50px;
+  font-size: 2.1rem;
   font-weight: 700;
 }
 .search-hotel__btn:hover {
@@ -490,12 +502,15 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     box-sizing: border-box;
-    height: 256px;
+    min-height: 256px;
     padding: 0 50px 0 50px;
     text-align: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .reason__desc,
   .reason__num,
@@ -503,6 +518,7 @@ main {
     margin-bottom: 15px;
   }
   .reason__title {
+    width: 155px;
     font-size: 2.1rem;
     font-weight: 700;
   }
@@ -523,33 +539,32 @@ main {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    min-height: 256px;
+    padding: 0;
   }
   .feature {
-    min-height: 256px;
+    min-height: 330px;
     text-align: center;
     width: 33.333%;
-    height: 256px;
     padding: 0 50px;
     box-sizing: border-box;
   }
   .feature__title {
     margin: 0;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 90px;
     position: relative;
     font-size: 2.1rem;
     font-weight: 700;
   }
   .feature__logo {
     position: absolute;
-    top: -55px;
+    top: -90px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
+    width: 75px;
+    height: 75px;
   }
   .feature__logo--house:before {
     background-position: -67px -10px;
@@ -590,6 +605,7 @@ main {
   .search-hotel {
     width: 460px;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   .search-hotel__title {
     font-size: 3rem;
@@ -635,12 +651,15 @@ main {
   padding: 0 15px;
 }
 .feedback-head__title {
-  padding: 40px 0;
+  padding: 75px 0 30px;
   font-weight: 700;
+  line-height: 2.4rem;
 }
 .feedback-head__desc {
   color: #333;
   font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 10px;
 }
 .form-field {
   color: #000;
@@ -718,8 +737,10 @@ main {
   vertical-align: top;
   position: relative;
   cursor: pointer;
-  margin: 15px 0;
-  font-size: 1.4rem;
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: none;
 }
 .form-impress__label:before {
   content: "";
@@ -1301,6 +1322,7 @@ main {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #000;
   text-align: center;
@@ -1542,18 +1564,11 @@ main {
 }
 @media (min-width: 768px) {
   .blog-content {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-align-items: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    /*flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;*/
+    display: block;
     width: 685px;
     position: relative;
   }
@@ -1568,6 +1583,12 @@ main {
   }
   .blog-content__blog-item {
     width: 305px;
+    display: inline-block;
+    float: left;
+    margin-right: 75px;
+  }
+  .blog-content__blog-item:nth-child(2n) {
+    margin-right: 0;
   }
   .blog-content__blog-item:nth-last-child(-n+2) {
     border-bottom: 2px solid #d6d6d6;
@@ -1601,8 +1622,17 @@ main {
     top: 0;
     left: 820px;
   }
+  .blog-content__blog-item {
+    margin-right: 90px;
+  }
   .blog-content__blog-item:nth-last-child(-n+3) {
     border-bottom: 2px solid #d6d6d6;
+  }
+  .blog-content__blog-item:nth-child(2n) {
+    margin-right: 90px;
+  }
+  .blog-content__blog-item:nth-child(3n) {
+    margin-right: 0;
   }
 }
 .post-inner {
@@ -1754,7 +1784,15 @@ main {
     border-bottom: 2px solid #d6d6d6;
     top: 6px;
     left: 0;
-    width: 100%;
+    width: 30%;
+  }
+  .post-head__tegs:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #d6d6d6;
+    top: 6px;
+    right: 0;
+    width: 30%;
   }
   .post-head__tegs span {
     z-index: 1;
@@ -1803,7 +1841,7 @@ main {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
+  padding: 30px 0;
   background-color: #fff;
 }
 .site__hteg {
@@ -1837,6 +1875,7 @@ main {
 	}*/
 }
 .social-link {
+  text-decoration: none;
   box-sizing: border-box;
   padding: 14px;
   margin-right: 5px;
