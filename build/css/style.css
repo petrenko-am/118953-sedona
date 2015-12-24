@@ -3,7 +3,7 @@ html {
 }
 body {
   color: #fff;
-  font-family: 'PT Sans', 'Verdana', sans-serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-size: 1.8em;
   line-height: 1.2;
   text-transform: uppercase;
@@ -717,7 +717,7 @@ main {
 }
 .form-fieldset__required-label:after {
   content: " *";
-  color: #ff4444;
+  color: #f44;
 }
 .form-common__label {
   padding: 14px 15px;
@@ -955,7 +955,7 @@ main {
   cursor: pointer;
 }
 .form-showplace__label:before {
-  font-family: 'symbols-sedona';
+  font-family: "symbols-sedona";
   font-size: 28px;
   content: "";
   display: inline-block;
@@ -1057,7 +1057,7 @@ main {
     height: 290px;
   }
   .feedback-head {
-    padding: 0px 20%;
+    padding: 0 20%;
   }
   .feedback-head__title {
     text-align: center;
@@ -1322,7 +1322,6 @@ main {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #000;
   text-align: center;
@@ -1459,7 +1458,7 @@ main {
   max-width: 420px;
 }
 .blog-head__title {
-  padding: 40px 0px 30px 0;
+  padding: 40px 0 30px 0;
   font-weight: 700;
   font-size: 3rem;
 }
@@ -1651,7 +1650,7 @@ main {
   padding: 0 15px;
 }
 .post-head__title {
-  padding: 40px 0px 30px 0;
+  padding: 40px 0 30px 0;
   font-weight: 700;
   font-size: 3rem;
 }
@@ -1861,18 +1860,6 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 40px;
-  /*&__twitter {
-	background: url(../img/sprite.png) no-repeat 50% 50%;
-	background-position: -241px 3px;
-	}
-	&__facebook {
-	background: url(../img/sprite.png) no-repeat 50% 50%;
-	background-position: -207px 0;
-	}
-	&__youtube {
-	background: url(../img/sprite.png) no-repeat 50% 50%;
-    background-position: -281px 3px;	
-	}*/
 }
 .social-link {
   text-decoration: none;
